@@ -35,4 +35,34 @@ export const homeImages = [
     image:
       "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1450&q=80",
   },
+  {
+    id: 7,
+    title: "venice beach skate park",
+    image:
+      "https://images.unsplash.com/photo-1546947610-343282bc94e4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2690&q=80",
+  },
+  {
+    id: 8,
+    title: "venice beach",
+    image:
+      "https://images.unsplash.com/photo-1506104795953-3862fa60f36e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80",
+  },
+  {
+    id: 9,
+    title: "the homies",
+    image:
+      "https://images.unsplash.com/photo-1532649842991-60f6a04df35d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+  },
+  {
+    id: 10,
+    title: "she rides",
+    image:
+      "https://images.unsplash.com/photo-1590560295623-e47524c2de67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80",
+  },
+  {
+    id: 11,
+    title: "off the wall",
+    image:
+      "https://images.unsplash.com/photo-1517582837435-fdb3ccb5bb41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80",
+  },
 ];

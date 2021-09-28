@@ -1,11 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { AiOutlineInstagram, AiOutlineFacebook } from "react-icons/ai";
 
 function Navbar() {
   return (
     <header>
       <h1 className="navbar-title">ANDREW COBB</h1>
+      {/* <AiOutlineInstagram style={{ marginRight: "27vw" }} /> */}
+      {/* <AiOutlineFacebook /> */}
       <nav>
         <ul className="navbar-links">
           <li>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Home.css";
 import { homeImages } from "../../assets/homeImages";
-import { AiOutlineCloseCircle as CloseIcon } from "react-icons/ai";
+import { AiOutlineClose as CloseIcon } from "react-icons/ai";
 
 function Home() {
   const [imageModel, setImageModel] = useState(false);

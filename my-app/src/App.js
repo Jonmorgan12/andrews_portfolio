@@ -5,12 +5,13 @@ import Gallery from "./Components/Gallery/Gallery";
 import About from "./Components/About/About";
 import Experience from "./Components/Experience/Experience";
 import Contact from "./Components/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="page-container">
         <NavBar />
         <div className="content">
           <Switch>
@@ -31,6 +32,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer />
       </div>
     </Router>
   );

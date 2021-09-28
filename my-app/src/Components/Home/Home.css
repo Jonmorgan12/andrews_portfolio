@@ -2,9 +2,9 @@
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-width: 25%;
-  -moz-column-width: 25%;
-  column-width: 25%;
+  -webkit-column-width: 20%;
+  -moz-column-width: 20%;
+  column-width: 20%;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -18,6 +18,10 @@
 
 .home-images .images:hover {
   filter: opacity(0.8);
+}
+
+.images img {
+  border-radius: 5px;
 }
 
 @media (max-width: 991px) {
