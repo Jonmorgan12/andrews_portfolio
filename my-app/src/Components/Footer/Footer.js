@@ -1,10 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import {
-  AiOutlineInstagram as Instagram,
-  AiOutlineFacebook as Facebook,
-  AiOutlineTwitter as Twitter,
-} from "react-icons/ai";
 
 function Footer() {
   return (
@@ -47,11 +42,6 @@ function Footer() {
               <li>(adress)</li>
             </ul>
           </div>
-        </div>
-        <div className="social-media-icons">
-          <Instagram style={{ height: "1.5rem", width: "1.5rem" }} />
-          <Facebook style={{ height: "1.5rem", width: "1.5rem" }} />
-          <Twitter style={{ height: "1.5rem", width: "1.5rem" }} />
         </div>
         <div className="footer-privacy">
           <p className="">

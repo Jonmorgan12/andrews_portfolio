@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 li,
@@ -11,6 +11,7 @@ a,
 button {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  /* font-weight: bold; */
   color: #333;
   text-decoration: none;
 }
@@ -20,12 +21,15 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
 }
 
 .navbar-title {
   cursor: pointer;
   color: #333;
-  margin-right: auto;
 }
 
 .navbar-links {
@@ -58,4 +62,19 @@ button {
 
 button:hover {
   background-color: rgba(201, 201, 201, 0.8);
+}
+
+.social-media-icons {
+  margin-right: auto;
+}
+
+.icons {
+  margin-left: 10px;
+  margin-right: 0;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.icons:hover {
+  color: lightgray;
 }
