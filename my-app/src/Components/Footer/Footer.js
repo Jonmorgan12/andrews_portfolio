@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import { AiFillPhone as Phone, AiFillMail as Mail } from "react-icons/ai";
+import { FaSearchLocation as Location } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -10,9 +12,11 @@ function Footer() {
           <div className="footer-column">
             <h4>Contact Information</h4>
             <ul className="footer-list">
-              <li>Phone: +1 (805) 717-3806</li>
               <li>
-                Email:{" "}
+                <Phone /> Phone: <b>+1 (805) 717-3806</b>
+              </li>
+              <li>
+                <Mail /> Email:{" "}
                 <a
                   style={{ color: "blue" }}
                   href="mailto:jonmorgan.cobb@gmail.com?"
@@ -21,7 +25,9 @@ function Footer() {
                   jonmorgan.cobb@gmail.com
                 </a>
               </li>
-              <li>Location: San Luis Obispo, CA</li>
+              <li>
+                <Location /> Location: <b>San Luis Obispo, CA</b>
+              </li>
             </ul>
           </div>
           {/* Column2 */}
