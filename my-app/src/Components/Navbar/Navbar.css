@@ -8,7 +8,7 @@
 
 li,
 a,
-button {
+button:target {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   /* font-weight: bold; */
@@ -68,13 +68,12 @@ button:hover {
   margin-right: auto;
 }
 
-.icons {
-  margin-left: 10px;
-  margin-right: 0;
+.icons a {
+  margin: 0 0 0 10px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 
-.icons:hover {
+.icons a:hover {
   color: lightgray;
 }

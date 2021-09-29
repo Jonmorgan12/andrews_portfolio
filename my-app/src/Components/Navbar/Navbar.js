@@ -3,8 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import {
   AiOutlineInstagram as Instagram,
-  AiOutlineFacebook as Facebook,
-  AiOutlineTwitter as Twitter,
+  AiFillLinkedin as LinkedIn,
 } from "react-icons/ai";
 
 function Navbar() {
@@ -13,14 +12,17 @@ function Navbar() {
       <h1 className="navbar-title">ANDREW COBB</h1>
       <div className="social-media-icons">
         <span className="icons">
-          <Instagram style={{ height: "1.5rem", width: "1.5rem" }} />
+          <a href="https://www.instagram.com/countrycobb/" target="_blank">
+            <Instagram style={{ height: "1.5rem", width: "1.5rem" }} />
+          </a>
         </span>
         <span className="icons">
-          <Facebook style={{ height: "1.5rem", width: "1.5rem" }} />
-        </span>
-        <span className="icons">
-          {" "}
-          <Twitter style={{ height: "1.5rem", width: "1.5rem" }} />
+          <a
+            href="https://www.linkedin.com/in/andrew-cobb-96b9b61ba/"
+            target="_blank"
+          >
+            <LinkedIn style={{ height: "1.5rem", width: "1.5rem" }} />
+          </a>
         </span>
       </div>
       <nav>

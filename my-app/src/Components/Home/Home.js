@@ -23,6 +23,7 @@ function Home() {
           return (
             <div className="images" onClick={() => getSingleImage(item.image)}>
               <img key={id} src={item.image} style={{ width: "100%" }} />
+              {/* <div>{item.title}</div> */}
             </div>
           );
         })}
