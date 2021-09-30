@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import { AiFillPhone as Phone, AiFillMail as Mail } from "react-icons/ai";
-import { FaSearchLocation as Location } from "react-icons/fa";
+import { IoLocationSharp as Location } from "react-icons/io5";
 
 function Footer() {
   return (
@@ -51,8 +51,10 @@ function Footer() {
         </div>
         <div className="footer-privacy">
           <p className="">
-            {new Date().getFullYear()} Jon-morgan Cobb | All Rights Reserved |
-            Terms Of Service | Privacy
+            <b>
+              {new Date().getFullYear()} Jon-morgan Cobb | All Rights Reserved |
+              Terms Of Service | Privacy
+            </b>
           </p>
         </div>
       </div>
