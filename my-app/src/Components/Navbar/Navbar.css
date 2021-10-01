@@ -20,11 +20,16 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 20px 10%;
   position: sticky;
   top: 0;
   z-index: 1;
   background-color: white;
+
+  /* when actively scrolling */
+  /* transition: background-color 600ms ease; */
+  background-color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .navbar-title {
