@@ -8,7 +8,6 @@ function Footer() {
     <footer className="main-footer">
       <div className="footer-container">
         <div className="footer-row">
-          {/* Column1 */}
           <div className="footer-column">
             <h4>Contact Information</h4>
             <ul className="footer-list">
