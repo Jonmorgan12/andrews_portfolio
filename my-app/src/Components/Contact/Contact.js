@@ -1,14 +1,32 @@
 import React from "react";
 import "./Contact.css";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_cukia6t",
+        "template_59wbey8",
+        event.target,
+        "user_wsCNxCbHxNqvn7lKi40MW"
+      )
+      .then((response) => {
+        console.log(response);
+        alert("Your message has been sent!");
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="form-container">
       <h1 className="form-title">CONTACT FORM</h1>
-      <h2 className="form-title">
+      <h2 className="form-sub-title">
         Send me an email, I look forward to do buisness with you.
       </h2>
-      <form>
+      <form onSubmit={sendEmail}>
         {/* <label>Name</label> */}
         <input
           className="input-box"
@@ -20,7 +38,7 @@ export default function Contact() {
         <input
           className="input-box"
           type="text"
-          name="email"
+          name="user_email"
           placeholder="Email Adress"
         />
         {/* <label>Subject</label> */}
@@ -37,10 +55,13 @@ export default function Contact() {
           name="message"
           placeholder="Message to Andrew..."
         />
+        <input
+          type="submit"
+          value="Send Message"
+          className="send-message"
+          style={{ overflow: "auto" }}
+        />
       </form>
-      <div style={{ overflow: "auto" }}>
-        <button className="send-message">Send Message</button>
-      </div>
     </div>
   );
 }

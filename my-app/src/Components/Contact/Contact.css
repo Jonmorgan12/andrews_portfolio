@@ -1,5 +1,5 @@
 .form-container {
-  height: auto;
+  height: 65vh;
   width: 70%;
   padding-top: 5px;
   padding-bottom: 20px;
@@ -12,7 +12,7 @@
   align-content: center;
   /* margin-bottom: 15vh;
   margin-top: 15vh; */
-  /* border: 0.5px solid #cdcdcd; */
+  border: 0.5px solid #cdcdcd;
   border-radius: 8px;
   /* background-color: rgba(255, 255, 255, 0.2); */
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -20,6 +20,14 @@
 
 .form-title {
   margin-top: 5vh;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.form-sub-title {
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -75,14 +83,21 @@ label {
 }
 
 .send-message {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
   margin-bottom: 10px;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  /* background-color: rgb(104, 223, 53); */
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgb(201, 201, 201, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
   float: right;
   margin-right: 5vw;
   position: relative;
+}
+
+.send-message:hover {
+  background-color: rgba(201, 201, 201, 0.8);
 }
