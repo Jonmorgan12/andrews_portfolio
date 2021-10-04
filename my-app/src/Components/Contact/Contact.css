@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: rgb(120, 120, 120);
 }
 
 label {
@@ -63,13 +63,15 @@ label {
 }
 
 .large-text-box {
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
   display: flex;
   /* justify-content: center;
   align-items: center; */
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
+  padding-top: 5px;
+  padding-left: 5px;
   height: 15vh;
   width: 60vw;
   position: relative;

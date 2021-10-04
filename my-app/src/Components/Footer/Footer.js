@@ -19,10 +19,10 @@ function Footer() {
                 <Mail /> Email:{" "}
                 <a
                   style={{ color: "blue" }}
-                  href="mailto:jonmorgan.cobb@gmail.com?"
+                  href="mailto:andrewncobb33@gmail.com?"
                   subject="HTML link"
                 >
-                  jonmorgan.cobb@gmail.com
+                  andrewncobb33@gmail.com
                 </a>
               </li>
               <li>
