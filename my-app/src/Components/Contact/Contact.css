@@ -90,7 +90,7 @@ label {
   margin-bottom: 10px;
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: rgb(0, 136, 255);
+  background-color: rgb(7, 188, 12);
   color: white;
   border: none;
   border-radius: 5px;
@@ -102,5 +102,31 @@ label {
 }
 
 .send-message:hover {
-  background-color: rgba(0, 136, 255, 0.8);
+  background-color: rgba(7, 188, 12, 0.8);
+}
+
+/* styling for toasts */
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #121212;
+  --toastify-color-info: #3498db;
+  --toastify-color-success: rgb(7, 188, 12);
+  --toastify-color-warning: #f1c40f;
+  --toastify-color-error: #e74c3c;
+  /* --toastify-color-transparent: rgba(255, 255, 255, 0.7); */
+
+  --toastify-icon-color-info: var(--toastify-color-info);
+  --toastify-icon-color-success: var(--toastify-color-success);
+  --toastify-icon-color-warning: var(--toastify-color-warning);
+  --toastify-icon-color-error: var(--toastify-color-error);
+
+  --toastify-toast-width: 320px;
+  --toastify-toast-background: #fff;
+  --toastify-toast-min-height: 64px;
+  --toastify-toast-max-height: 800px;
+  --toastify-font-family: sans-serif;
+  --toastify-z-index: 9999;
+
+  --toastify-text-color-light: #757575;
+  --toastify-text-color-dark: #fff;
 }
