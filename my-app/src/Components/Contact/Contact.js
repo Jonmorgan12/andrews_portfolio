@@ -8,26 +8,33 @@ import "./Contact.css";
 init("user_wsCNxCbHxNqvn7lKi40MW");
 
 export default function Contact() {
-  const { register, handleSubmit, errors } = useForm();
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm();
   const successMessage = () => toast.success("Your email has been sent!");
-  // const errorMessage = () => toast.error("Please fill out all of your fields.");
+  const errorMessage = () => toast.error("Message failed to send.");
   const history = useHistory();
 
-  const sendEmail = (event) => {
-    console.log("this is our data", event);
-    event.preventDefault();
+  const sendEmail = (data) => {
+    console.log("this is our data", data);
+    data.preventDefault();
     sendForm(
       "service_cukia6t",
       "template_59wbey8",
-      event.target,
+      data.target,
       "user_wsCNxCbHxNqvn7lKi40MW"
     )
       .then((response) => {
         console.log("this is our response", response);
         successMessage();
-        // history.push("/home");
+        history.push("/home");
       })
-      .catch((error) => console.log("this is our error", error));
+      .catch((error) => {
+        console.log("this is our error", error);
+        errorMessage();
+      });
   };
 
   return (
@@ -36,7 +43,10 @@ export default function Contact() {
       <h2 className="form-sub-title">
         Send me an email, I look forward to do buisness with you.
       </h2>
-      <form onSubmit={(event) => handleSubmit(sendEmail(event))}>
+      <form
+        id="contact-form"
+        onSubmit={(data) => handleSubmit(sendEmail(data))}
+      >
         <input
           className="input-box"
           type="text"
@@ -44,6 +54,7 @@ export default function Contact() {
           placeholder="Name"
           {...register("fullName", { required: true })}
         />
+        {errors.password && <p>Name is invalid</p>}
         <input
           className="input-box"
           type="text"
@@ -51,6 +62,7 @@ export default function Contact() {
           placeholder="Email Adress"
           {...register("user_email", { required: true })}
         />
+
         <input
           className="input-box"
           type="text"
@@ -58,6 +70,7 @@ export default function Contact() {
           placeholder="Subject"
           {...register("subject", { required: true })}
         />
+
         <textarea
           className="large-text-box"
           type="text"
@@ -65,6 +78,7 @@ export default function Contact() {
           placeholder="Message to Andrew..."
           {...register("message", { required: true })}
         />
+
         <input
           type="submit"
           value="Send Message"
