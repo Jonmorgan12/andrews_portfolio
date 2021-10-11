@@ -2,7 +2,7 @@
 .main-footer {
   color: #333;
   /* background-color: rgb(201, 201, 201, 1); */
-  padding-top: 2em;
+  /* padding-top: 2em; */
   /* position: relative; */
   bottom: 0;
   width: 100%;
@@ -32,6 +32,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 7vh;
   color: #333;
+}
+
+.lineBreak {
+  margin: 5vh auto;
+  border: none;
+  height: 1px;
+  background-color: #cdcdcd;
+  max-width: 75%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* margin-top: 5vh; */
+  /* margin-bottom: 5rem; */
 }

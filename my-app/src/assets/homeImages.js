@@ -65,4 +65,10 @@ export const homeImages = [
     image:
       "https://images.unsplash.com/photo-1517582837435-fdb3ccb5bb41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80",
   },
+  {
+    id: 12,
+    title: "off the wall",
+    image:
+      "https://images.unsplash.com/photo-1517582837435-fdb3ccb5bb41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80",
+  },
 ];

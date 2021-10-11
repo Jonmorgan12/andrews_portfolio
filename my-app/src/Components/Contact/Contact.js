@@ -7,6 +7,10 @@ import "react-toastify/dist/ReactToastify.css";
 import "./Contact.css";
 init("user_wsCNxCbHxNqvn7lKi40MW");
 
+// type FormValues = {
+//   fullName: String
+// }
+
 export default function Contact() {
   const {
     register,
@@ -17,13 +21,13 @@ export default function Contact() {
   const errorMessage = () => toast.error("Message failed to send.");
   const history = useHistory();
 
-  const sendEmail = (data) => {
-    console.log("this is our data", data);
-    data.preventDefault();
+  const sendEmail = (event) => {
+    console.log("this is our event", event);
+    event.preventDefault();
     sendForm(
       "service_cukia6t",
       "template_59wbey8",
-      data.target,
+      event.target,
       "user_wsCNxCbHxNqvn7lKi40MW"
     )
       .then((response) => {
@@ -45,22 +49,22 @@ export default function Contact() {
       </h2>
       <form
         id="contact-form"
-        onSubmit={(data) => handleSubmit(sendEmail(data))}
+        onSubmit={(event) => handleSubmit(sendEmail(event))}
       >
         <input
           className="input-box"
           type="text"
           name="fullName"
           placeholder="Name"
-          {...register("fullName", { required: true })}
+          {...register("fullName", { required: "Name is a required field" })}
         />
-        {errors.password && <p>Name is invalid</p>}
+        {errors.fullName && errors.fullName.message}
         <input
           className="input-box"
           type="text"
           name="user_email"
           placeholder="Email Adress"
-          {...register("user_email", { required: true })}
+          {...register("user_email", { required: "Email is a required field" })}
         />
 
         <input
@@ -68,7 +72,7 @@ export default function Contact() {
           type="text"
           name="subject"
           placeholder="Subject"
-          {...register("subject", { required: true })}
+          {...register("subject", { required: "Subject is a required field" })}
         />
 
         <textarea
@@ -76,7 +80,7 @@ export default function Contact() {
           type="text"
           name="message"
           placeholder="Message to Andrew..."
-          {...register("message", { required: true })}
+          {...register("message", { required: "message is a required field" })}
         />
 
         <input
