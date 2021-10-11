@@ -16,7 +16,7 @@ function Gallery() {
           <p className="image-description">Here is our description</p>
         </div>
       </div>
-      {/* <div className="gallery">
+      <div className="gallery">
         <img
           className="gallery-image"
           src="https://images.unsplash.com/photo-1517582837435-fdb3ccb5bb41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80"
@@ -26,8 +26,8 @@ function Gallery() {
           <div className="image-title"> Gallery</div>
           <p className="image-description">Here is our description</p>
         </div>
-      </div> */}
-      {/* <div className="gallery">
+      </div>
+      <div className="gallery">
         <img
           className="gallery-image"
           src="https://images.unsplash.com/photo-1517582837435-fdb3ccb5bb41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80"
@@ -37,7 +37,7 @@ function Gallery() {
           <div className="image-title"> Gallery</div>
           <p className="image-description">Here is our description</p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
