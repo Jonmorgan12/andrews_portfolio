@@ -2,6 +2,7 @@
 import NavBar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
 import Gallery from "./Components/Gallery/Gallery";
+import GalleryOne from "./Components/Gallery/GalleryOne";
 import About from "./Components/About/About";
 import Experience from "./Components/Experience/Experience";
 import Contact from "./Components/Contact/Contact";
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route exact path="/gallery">
               <Gallery />
+            </Route>
+            <Route exact path="/gallery-one">
+              <GalleryOne />
             </Route>
             <Route exact path="/about">
               <About />

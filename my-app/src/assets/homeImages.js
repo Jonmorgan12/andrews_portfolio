@@ -67,8 +67,8 @@ export const homeImages = [
   },
   {
     id: 12,
-    title: "off the wall",
+    title: "sunset",
     image:
-      "https://images.unsplash.com/photo-1517582837435-fdb3ccb5bb41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80",
+      "https://images.unsplash.com/photo-1478427433968-28045906c1dd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2thdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
   },
 ];
