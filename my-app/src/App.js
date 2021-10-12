@@ -7,7 +7,12 @@ import About from "./Components/About/About";
 import Experience from "./Components/Experience/Experience";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 
 function App() {
@@ -18,6 +23,7 @@ function App() {
         <ToastContainer style={{ background: "none" }} />
         <div className="content">
           <Switch>
+            <Route exact path="/" component={Home} />
             <Route exact path="/home">
               <Home />
             </Route>
