@@ -20,7 +20,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 3%;
+  padding: 20px 4%;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -94,7 +94,7 @@ button:hover {
 .toggle-button {
   position: absolute;
   top: 1.2rem;
-  right: 0.75rem;
+  right: 0;
   display: none;
   width: 60px;
   height: 40px;
@@ -109,7 +109,6 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
-    position: absolute;
   }
 
   .social-media-icons {
@@ -120,10 +119,6 @@ button:hover {
     display: none;
   }
 
-  /* .navbar-title {
-    margin-left: 20px;
-  } */
-
   .navbar-links {
     display: none;
     justify-content: center;
@@ -133,13 +128,10 @@ button:hover {
   }
 
   .navbar-links ul {
-    /* width: 100%; */
     flex-direction: column;
   }
 
   .navbar-links li {
-    /* display: flex;
-    justify-content: center; */
     text-align: center;
     padding: 0.5rem 1rem;
   }

@@ -31,25 +31,24 @@ function Footer() {
                 </li>
               </ul>
             </div>
-
             {/* Column2 */}
-            <div className="footer-column">
+            {/* <div className="footer-column">
               <h4>Column2</h4>
               <ul className="footer-list">
                 <li>(phone number)</li>
                 <li>(location)</li>
                 <li>(adress)</li>
               </ul>
-            </div>
+            </div> */}
             {/* Column3 */}
-            <div className="footer-column">
+            {/* <div className="footer-column">
               <h4>Column3</h4>
               <ul className="footer-list">
                 <li>(phone number)</li>
                 <li>(location)</li>
                 <li>(adress)</li>
               </ul>
-            </div>
+            </div> */}
           </div>
           <div className="footer-privacy">
             <p className="">
