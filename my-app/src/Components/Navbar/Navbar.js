@@ -5,11 +5,23 @@ import {
   AiOutlineInstagram as Instagram,
   AiFillLinkedin as LinkedIn,
 } from "react-icons/ai";
+import { GiHamburgerMenu as ToggleButton } from "react-icons/gi";
+
+window.onload = function () {
+  console.log("clicked");
+  const toggleButton = document.getElementsByClassName("toggle-button")[0];
+  const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+  toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+  });
+};
 
 function Navbar() {
   return (
-    <header>
-      <h1 className="navbar-title">ANDREW COBB</h1>
+    <nav className="navbar">
+      <div className="navbar-title">ANDREW COBB</div>
+      <ToggleButton className="toggle-button" style={{ color: "#333" }} />
       <div className="social-media-icons">
         <span className="icons">
           <a href="https://www.instagram.com/countrycobb/" target="_blank">
@@ -25,8 +37,8 @@ function Navbar() {
           </a>
         </span>
       </div>
-      <nav>
-        <ul className="navbar-links">
+      <div className="navbar-links">
+        <ul>
           <li>
             <Link to="/home">Home</Link>
           </li>
@@ -40,11 +52,11 @@ function Navbar() {
             <Link to="/experience">Experience</Link>
           </li>
         </ul>
-      </nav>
+      </div>
       <Link className="contact-button" to="/contact">
         <button>Contact</button>
       </Link>
-    </header>
+    </nav>
   );
 }
 
