@@ -48,3 +48,12 @@
   /* margin-top: 5vh; */
   /* margin-bottom: 5rem; */
 }
+
+@media (max-width: 600px) {
+  .footer-privacy p {
+    /* background-color: cadetblue; */
+    margin: 0 auto;
+    max-width: 300px;
+    font-size: 14px;
+  }
+}

@@ -54,7 +54,6 @@ function Footer() {
             <p className="">
               <b>
                 {new Date().getFullYear()} Jon-morgan Cobb | All Rights Reserved
-                | Terms Of Service | Privacy
               </b>
             </p>
           </div>
