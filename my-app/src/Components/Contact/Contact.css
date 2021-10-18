@@ -45,12 +45,13 @@ label {
 }
 
 .input-box {
-  margin-bottom: 10px;
+  margin: 10px auto 10px auto;
+  /* margin-bottom: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   height: 5vh;
   outline: none;
   border: 1px solid #cdcdcd;
@@ -62,14 +63,21 @@ label {
   border-radius: 6px;
 }
 
+.input-box:focus {
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.large-text-box:focus {
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
 .large-text-box {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 10px;
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 10px auto;
   padding-top: 5px;
   padding-left: 5px;
   height: 15vh;
@@ -88,7 +96,8 @@ label {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   margin-bottom: 10px;
-  margin-left: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   padding: 9px 25px;
   background-color: rgb(7, 188, 12);
   color: white;
@@ -97,7 +106,6 @@ label {
   cursor: pointer;
   transition: all 0.3s ease 0s;
   float: right;
-  margin-right: 5vw;
   position: relative;
 }
 
@@ -129,4 +137,35 @@ label {
 
   --toastify-text-color-light: #757575;
   --toastify-text-color-dark: #fff;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    margin: 8vh auto;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-sub-title {
+    font-size: 15px;
+    max-width: 245px;
+    margin: 2vh auto;
+  }
+
+  .send-message {
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .input-box {
+    font-size: 14px;
+  }
+
+  .large-text-box {
+    font-size: 14px;
+  }
 }
